@@ -1,13 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Amatic SC', cursive;
+    background-image: url("https://www.mielabelo.be/wp-content/uploads/2014/03/wallhaven-240723.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }
 /* Styling my header */
-header{
-    background-color: #5C5D67;
-}
 .name {
     text-align: center;
     font-size: 3em;
+    margin-top: -50px;
 }
 
 .slogan {
@@ -16,35 +21,25 @@ header{
     margin-top: -30px;
 }
 
-.HeaderIMG {
-    display: grid;
-    grid-template-columns: 80px 80px 80px;
-    grid-template-rows: auto;
-}
-
-.HeaderIMG img {
-    width: 70px;
-    height: 70px;
-    margin-left: 650px;
-}
 
 /* Styling nav */
 nav {
     position: fixed;
     background-color: #5C5D67;
-    width: 5%;
+    width: 7%;
 }
 
 nav img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     align-items: center;
 }
 
 nav ul {
     list-style: none;
-    margin: 0; 
     text-align: center;
+    padding: 3px;
+    font-size: 0.8em;
 }
 
 nav a {
@@ -56,19 +51,42 @@ nav a:hover {
     color: #C493B0;
 }
 
-img {
-    width: 1400px;
-    height: 300px;
+
+/* About page styling */
+.gif img {
+    width: 150px;
+    height: 100px;
+    opacity: 0.7;
 }
 
-/* Home page styling */
-#container1{
-    background-color: #A68BA5;
-    border: #5C5D67;
-    border-radius: 10px;
+.aboutMe {
     display: grid;
-    row-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 30px;
+    margin-top: 300px;
+    align-items: center;
+}
+
+#container1 {
+     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
+    grid-gap: 40px;
     margin-left: 10%;
+    opacity: 0.8;
+    font-style: bold;
+}
+
+.box {
+    border: #5C5D67 solid 1px;
+    border-radius: 10px;
+    background-color: #A68BA5;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+.box:hover {
+    background-color: #C493B0;
+    width:300px;
+    font-size: 1.3em;
 }

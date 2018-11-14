@@ -1,0 +1,74 @@
+body{
+    font-family: 'Amatic SC', cursive;
+}
+/* Styling my header */
+header{
+    background-color: #5C5D67;
+}
+.name {
+    text-align: center;
+    font-size: 3em;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 2em;
+    margin-top: -30px;
+}
+
+.HeaderIMG {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: auto;
+}
+
+.HeaderIMG img {
+    width: 70px;
+    height: 70px;
+    margin-left: 650px;
+}
+
+/* Styling nav */
+nav {
+    position: fixed;
+    background-color: #5C5D67;
+    width: 5%;
+}
+
+nav img {
+    width: 30px;
+    height: 30px;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0; 
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #C493B0;
+}
+
+img {
+    width: 1400px;
+    height: 300px;
+}
+
+/* Home page styling */
+#container1{
+    background-color: #A68BA5;
+    border: #5C5D67;
+    border-radius: 10px;
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    margin-left: 10%;
+}

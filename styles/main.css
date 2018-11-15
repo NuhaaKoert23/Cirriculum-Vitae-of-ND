@@ -78,13 +78,17 @@ nav a:hover {
 
 #container1 {
      display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
     grid-gap: 40px;
     margin-left: 10%;
     opacity: 0.8;
     font-style: bold;
-   
+   padding: 20px;
+   background-image: url("http://xfuli.co/wp-content/uploads/2018/02/slate-stone-wall-black-slate-thin-stone-angle.jpg");
+   background-position: fixed;
+   background-size: cover;
+
 }
 
 .box {
@@ -99,6 +103,7 @@ nav a:hover {
     height: 100px;
     font-size: 0.6em;
     text-align: center;
+    line-height: 0.9em;
 }
 
 .box:hover {
@@ -108,10 +113,18 @@ nav a:hover {
     font-size: 1em;
 }
 
+#box5:hover{
+    height: 500px;
+}
+
+#button,#button2,#button3,#button4,#button5 {
+    display: none;
+}
 /* styling of buttons */
 button {
     width: 50px;
     font-size: 0.8em;
     background-color: #5C5D67;
     text-align: center;
+    border-radius: 8px;
 }

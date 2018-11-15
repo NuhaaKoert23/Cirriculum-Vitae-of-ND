@@ -34,6 +34,14 @@ function myFunction4() {
     }
 }
 
+function myFunction5() {
+    var x = document.getElementById("button5");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 
 

@@ -22,13 +22,13 @@
 
     <nav>
             <ul>
-                <li><a href="#"><img src="./images/home.png" alt="">Home</a></li>
-                <li><a href="#about"><img src="./images/user.png" alt="">About</a></li>
-                <li><a href=""><img src="./images/connections.png" alt="">Contact</a></li>
+                <img src="./images/home.png" alt=""><li><a href="#">Home</a></li>
+                <img src="./images/user.png" alt=""><li><a href="#about">About</a></li>
+                <img src="./images/connections.png" alt=""><li><a href="">Contact</a></li>
             </ul>
     </nav>
 
-    <div id="about">
+    <div id="about1">
         <div class="aboutMe">
             <div class="gif">
                 <img src="./images/3cb1a41f0c177e24ba8638a0dafcdab2.gif" alt="">
@@ -39,14 +39,32 @@
             </div>
         </div>
 
-    <div id="container1">
-        <div class="box" id="box1" >
+    <div class="row">
+        <div class="column" onclick="openTab('b1');">
             <div class="icons">
                 <img src="./images/open-book.png" alt="">
             </div>
             <h3>Work Experience</h3>
-             <button onclick="myFunction()">Learn More</button>
-            <div id="button">
+        </div>
+            
+        <div class="column" onclick="openTab('b2');">
+            <div class="icons">
+                <img src="./images/exam.png" alt="">
+            </div>
+            <h3>Work Shadowing</h3>
+        </div>
+
+        <div class="column" onclick="openTab('b3');">
+            <div class="icons">
+                <img src="./images/abacus.png" alt="">
+            </div>
+            <h3>Skills Gained</h3>
+        </div>
+
+        <div id="b1" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h3>Work Experience</h3>
+            <div id="info">
                 <p> Name of Company: GP Retail </p>
                 <p> Position: Merchandiser</p>
                 <p> Duration of Service: Nov 2017 - January 2018 </p>
@@ -54,13 +72,10 @@
             </div>
         </div>
 
-        <div class="box" id="box2">
-            <div class="icons">
-                <img src="./images/exam.png" alt="">
-            </div>
+        <div id="b2" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
             <h3>Work Shadowing</h3>
-            <button onclick="myFunction2()">Learn More</button>
-            <div id="button2">
+            <div id="info">
                 <p> Name of Company : Mitchells Plain Primary no1</p>
                 <p> Position: Secretary assistant</p>
                 <p>Duration of service: March 2017 - November 2017</p>
@@ -68,13 +83,10 @@
             </div>
         </div>
 
-        <div class="box" id="box3">
-            <div class="icons">
-                <img src="./images/abacus.png" alt="">
-            </div>
+        <div id="b3" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
             <h3>Skills Gained</h3>
-            <button onclick="myFunction3()">Learn More</button>
-            <div id="button3">
+            <div id="info">
                 <p>
                     <ul>
                         <li>Accuracy and good attention to detail</li>
@@ -91,51 +103,60 @@
                 </p>
             </div>
         </div>
-
-        <div class="box" id="box4">
-            <div class="icons">
-                <img src="./images/ink.png" alt="">
+        
+        <div class="about2">
+            <div class="column" onclick="openTab('b4');">
+                <div class="icons">
+                    <img src="./images/ink.png" alt="">
+                </div>
+                <h3>Personal Information</h3>
             </div>
-            <h3>Personal Information</h3>
-            <button onclick="myFunction4()">Learn More</button>
-            <div id="button4">
-                <p>Gender:  Female </p>                   	   
-                <p>Cellular number:  061 786 8192</p> 
-                <p>E-mail address:  nuhaadf@gmail.com</p>  			
-                <p>Home language:  English</p> 
-                <p>Other language proficiency:  Afrikaans</p>
-            </div> 
+
+            <div class="column" onclick="openTab('b5');">
+                <div class="icons">
+                    <img src="./images/student.png" alt="">
+                </div>
+                <h3>Academic Details</h3>
+            </div>
+
+            <div id="b4" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h3>Personal Information</h3>
+                <div id="info">
+                    <p>Gender:  Female </p>                   	   
+                    <p>Cellular number:  061 786 8192</p> 
+                    <p>E-mail address:  nuhaadf@gmail.com</p>  			
+                    <p>Home language:  English</p> 
+                    <p>Other language proficiency:  Afrikaans</p>
+                </div> 
+            </div>
+
+            <div id="b5" class="containerTab">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <h3>Academic Details</h3>
+                <div id="info">
+                    <h4>Tertiary Education</h4>
+                    <p>Dates: Sep 2018 - Current</p>
+                    <p>Institution: Life Choices</p>
+                    <p>Course: Web Development</p>  
+            
+
+                    <p>Subjects: Programming, Professional Development, Design Thinking, Life Skills</p>
+                    <p>Dates: Nov 2016 - Nov 2017</p>
+                    <p>Institution: Africa Learn (EDTP SETA)</p>   
+                    <p>Course: End User Computing : ICT </p>
+                    <p>Subjects: Basic computer litaracy, Microsoft Excel, Microsoft PowerPoint, Microsoft Access, Microsoft Word, Microsoft Publisher</p>
+                    <p>Dates: July - Aug 2018</p>
+                    <p>Institution: Desmond Tutu Foundation</p>
+                    <p>Course: Women of Worth - Employment Empowering</p>
+                <h4>Secondary Education</h4>
+                    <p>School: Trafalgar High School</p>	
+                    <p> Year: 2015</p>
+                    <p> Qualification: NSC Grade 12</p>
+            </div>
+
         </div>
 
-        <div class="box" id="box5">
-            <div class="icons">
-                <img src="./images/student.png" alt="">
-            </div>
-            <h3>Academic Details</h3>
-            <button onclick="myFunction5()">Learn More</button>
-            <div id="button5">
-            <h4>Tertiary Education</h4>
-            <p>Dates: Sep 2018 - Current</p>
-            <p>Institution: Life Choices</p>
-            <p>Course: Web Development</p>
-            <p>Subjects: Programming, Professional Development, Design 
-            Thinking, Life Skills</p>
-            <p>Dates: Nov 2016 - Nov 2017</p>
-            <p>Institution: Africa Learn (EDTP SETA)</p>   
-            <p>Course: End User Computing : ICT </p>
-            <p>Subjects: Basic computer litaracy, Microsoft Excel, Microsoft PowerPoint, Microsoft Access, Microsoft Word, Microsoft Publisher
-            </p>
-            <br>
-            <p>Dates: July - Aug 2018</p>
-            <p>Institution: Desmond Tutu Foundation</p>
-            <p>Course: Women of Worth - Employment Empowering</p>
-            <h4>Secondary Education</h4>
-            <p>School: Trafalgar High School</p>	
-            <p> Year: 2015</p>
-            <p> Qualification: NSC Grade 12</p>
-        </div>
-    </div>
-</div>
 <script src="./JS/main.js"></script>
 </body>
 </html>

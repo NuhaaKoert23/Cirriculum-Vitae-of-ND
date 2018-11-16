@@ -12,21 +12,21 @@ body{
 /* Styling my header */
 .name {
     text-align: center;
-    font-size: 5em;
-    margin-top: -50px;
+    font-size: 3.5em;
+    margin-top: -70px;
 }
 
 .slogan {
     text-align: center;
-    font-size: 4em;
-    margin-top: -30px;
+    font-size: 2.9em;
+    margin-top: -60px;
 }
 
 .slogan:hover {
     color: #C493B0;
 }
 
-/* Styling nav */
+/* Styling nav bar */
 nav {
     position: fixed;
     background-color: #5C5D67;
@@ -35,15 +35,15 @@ nav {
 }
 
 nav img {
-    width: 50px;
-    height: 50px;
-    align-items: center;
+    width: 40px;
+    height: 40px;
 }
 
 nav ul {
     list-style: none;
     padding: 3px;
     font-size: 1.5em;
+    text-align: center;
 }
 
 nav a {
@@ -53,7 +53,7 @@ nav a {
 
 nav a:hover {
     color: #C493B0;
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 
@@ -65,78 +65,89 @@ nav a:hover {
 
 .gif img {
     width: 250px;
-    height: 200px;
+    height: 170px;
     opacity: 0.7;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .description {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .aboutMe {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 30px;
-    margin-top: 600px;
+    margin-top: 365px;
     align-items: center;
 }
 
-#container1 {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(1,1fr);
-    grid-gap: 40px;
-    margin-left: 10%;
-    opacity: 0.8;
+/* The grid: Three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.containerTab {
     padding: 20px;
+    color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*  */
+
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
 }
 
 .box {
-    border: white solid 1px;
-    border-radius: 10px;
-    background-color: #5C5D67;
-    -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
-    font-weight: bold;
-    padding: 5px;
-    width: 200px;
-    height: 200px;
-    font-size: 1.3em;
-    font-style: bold;
-    text-align: center;
-    line-height: 0.9em;
-    margin-top: 100px;
+    padding: 20px;
+    color: white;
 }
 
-.box:hover {
-    background-color: #C493B0;
-    width:300px;
-    height: 600px;
-    font-size: 1.8em;
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-#box5{
-    grid-column: span 2  / 3
+/* Closable button inside the image */
+.closebtn {
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 
-#box5:hover{
-    height: 500px;
-}
 
-#button,#button2,#button3,#button4,#button5 {
-    display: none;
-}
 /* styling of buttons */
 button {
-    width: 110px;
-    font-size: 0.8em;
-    background-color: white;
-    text-align: center;
-    border-radius: 8px;
-}
-
-button:hover {
     width: 110px;
     font-size: 0.8em;
     background-color: white;

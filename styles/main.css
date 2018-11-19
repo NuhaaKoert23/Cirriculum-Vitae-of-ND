@@ -8,17 +8,18 @@ body{
     background-size: contain;
     background-repeat: no-repeat;
     background-color: rgb(197, 194, 194);
+    background-position: fixed;
 }
 /* Styling my header */
 .name {
     text-align: center;
-    font-size: 3.5em;
+    font-size: 4em;
     margin-top: -70px;
 }
 
 .slogan {
     text-align: center;
-    font-size: 2.9em;
+    font-size: 3.1em;
     margin-top: -60px;
 }
 
@@ -32,6 +33,7 @@ nav {
     background-color: #5C5D67;
     width: 9%;
     margin-top: -60px;
+    opacity: 0.7;
 }
 
 nav img {
@@ -78,14 +80,14 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-left: 30px;
-    margin-top: 365px;
+    margin-top: 480px;
     align-items: center;
 }
 
 /* The grid: Three equal columns that floats next to each other */
 .column {
     float: left;
-    width: 25%;
+    width: 26%;
     padding: 50px;
     text-align: center;
     font-size: 25px;
@@ -96,7 +98,19 @@ nav a:hover {
 .containerTab {
     padding: 20px;
     color: white;
+    display: none;
+    
 }
+
+.containerTab:hover{
+    background: #C493B0;
+}
+
+#info{
+    font-size: 1.3em;
+    margin-left: 150px;
+}
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -112,8 +126,6 @@ nav a:hover {
     font-size: 35px;
     cursor: pointer;
 }
-
-/*  */
 
 .box {
     float: left;
@@ -146,11 +158,44 @@ nav a:hover {
 }
 
 
-/* styling of buttons */
-button {
-    width: 110px;
-    font-size: 0.8em;
-    background-color: white;
+/* styling of education */
+.education{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+/* styling contact page */
+#contact {
+    background-color: #5C5D67;
+    margin-top: 380px;
+}
+
+.avatar img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+    border: white solid 2px;
+    margin-left: 580px;
+    margin-top: 30px;
+}
+
+.acceptance p {
+    font-size: 2em;
+    padding: 10px 120px;
     text-align: center;
-    border-radius: 8px;
+}
+
+.flex-container img{
+    width: 50px;
+    height: 50px;
+    margin-left: 300px;
+}
+
+
+.HTML_CSS_JS img{
+    width: 800px;
+    height: 150px;
+    margin-left: 300px;
+    margin-top: 30px;
 }

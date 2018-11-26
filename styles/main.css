@@ -10,6 +10,7 @@ body{
     background-color: rgb(197, 194, 194);
     background-position: fixed;
 }
+
 /* Styling my header */
 .name {
     text-align: center;
@@ -182,14 +183,35 @@ nav a:hover {
 
 .acceptance p {
     font-size: 2em;
-    padding: 10px 120px;
+    padding: 10px 130px;
     text-align: center;
 }
 
 .flex-container img{
     width: 50px;
     height: 50px;
-    margin-left: 300px;
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 400px;
+    padding: 50px 550px;
+}
+.references{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 150px;
+    font-size: 1.3em;
+}
+
+.references:hover {
+    color: #C493B0;
+}
+
+h2  {
+    margin-left: 150px;
+    font-size: 2em;
 }
 
 
@@ -198,4 +220,138 @@ nav a:hover {
     height: 150px;
     margin-left: 300px;
     margin-top: 30px;
+}
+
+.p1 {
+    float: left;
+}
+
+.p2 {
+    float: right;
+}
+
+/* desktop view */
+@media (max-width: 980px) {
+    
+}
+
+/* tablet view */
+@media (max-width: 780px) {
+    body {
+        background-size: 900px;
+    }
+
+    .name {
+        font-size: 2.5em;
+    }
+
+    .slogan {
+        font-size: 1.8em;
+        margin-top: 5px;
+    }
+
+    nav {
+        width: 5%;
+    }
+
+    nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    nav ul {
+        font-size: 1em;
+    }
+
+    nav a: hover {
+        font-size: 1.3em;
+    }
+
+    .icons img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .gif img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .description {
+        font-size: 1.2em;
+    }
+
+    .column {
+        width: 20%;
+    }
+
+    #contact {
+        width: 830px;
+    }
+
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .HTML_CSS_JS img {
+        width: 400px;
+        margin-left: 250px;
+    }
+
+    .flex-container {
+        width: 200px;
+        margin-left: -200px;
+    }
+}
+
+/* mobile view */
+@media (max-width: 380px) {
+    .name {
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+    .slogan {
+        font-size: 50px;
+    }
+
+    nav {
+        width: 9%;
+        margin-top: 50px;
+    }
+
+    nav img {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul {
+        font-size: 50px;
+    }
+
+    .aboutMe {
+        column-gap: 20px;
+    }
+
+    .description {
+        width: 500px;
+        font-size: 33px;
+    }
+
+    .gif img {
+        width: 200px;
+        height: 200px;
+        margin-left: -10px;
+    }
+
+    .row {
+        padding: none;
+        width: 800px;
+    }
+
+    .row2 {
+        width: 800px;
+    }
+
 }

@@ -1,59 +1,87 @@
-/*
-Error: File to import not found or unreadable: partials/layout.
-       Load path: C:/Users/lifechoices/Desktop/Nuhaa/NewCV/Cirriculum-Vitae-of-ND/sass
-        on line 3 of sass/styles.scss
+nav a {
+  text-decoration: none;
+  color: #c5c2c2;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 2px;
+  font-family: "Amatic SC", cursive; }
 
-1: @import 'partials/variables',
-2:     'partials/base',
-3:     'partials/layout',
-4:     'partials/components',
-5:     'partials/responsiveness',
-6:     'partials/mixins';
+h1 {
+  font-family: "Amatic SC", Bold700;
+  font-size: 5.5em;
+  text-align: center; }
 
-Backtrace:
-sass/styles.scss:3
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:67:in `rescue in import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:44:in `import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:28:in `imported_file'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/import_node.rb:37:in `css_import?'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.6.0/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: partials/layout.\A        Load path: C:/Users/lifechoices/Desktop/Nuhaa/NewCV/Cirriculum-Vitae-of-ND/sass\A         on line 3 of sass/styles.scss\A \A 1: @import 'partials/variables',\A 2:     'partials/base',\A 3:     'partials/layout',\A 4:     'partials/components',\A 5:     'partials/responsiveness',\A 6:     'partials/mixins';"; }
+.slogan p {
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: -30px; }
+.slogan p:hover {
+  color: #EDADC7; }
+
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("https://www.mielabelo.be/wp-content/uploads/2014/03/wallhaven-240723.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #c5c2c2;
+  background-position: fixed; }
+
+nav {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: 80px;
+  background-color: #5C5D67; }
+  nav ul {
+    list-style: none;
+    padding: 10px 550px;
+    font-size: 1.2em; }
+  nav li {
+    float: left; }
+  nav a {
+    text-decoration: none;
+    color: #c5c2c2;
+    display: block;
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 2px;
+    font-family: "Amatic SC", cursive; }
+  nav a:hover {
+    color: #EDADC7; }
+
+.aboutMe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 150px;
+  margin-top: 380px; }
+  .aboutMe .description p {
+    font-family: "Amatic SC", cursive;
+    font-size: 1.7em; }
+
+.column {
+  float: left;
+  width: 26.5%;
+  padding: 50px;
+  text-align: center;
+  font-size: 1.3em;
+  cursor: pointer;
+  color: white; }
+
+nav img {
+  width: 50px;
+  height: 50px; }
+
+.gif img {
+  width: 200px;
+  height: 200px;
+  opacity: 0.7;
+  margin-left: 100px;
+  margin-top: 40px; }
+
+/*# sourceMappingURL=styles.css.map */

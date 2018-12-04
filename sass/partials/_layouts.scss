@@ -1,13 +1,79 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    font-family: 'Amatic SC', cursive;
     background-image: url("https://www.mielabelo.be/wp-content/uploads/2014/03/wallhaven-240723.jpg");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: rgb(197, 194, 194);
+    background-color:$background-color;
     background-position: fixed;
 }
+
+// nav bar 
+nav{
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    height: 80px;
+    background-color: $grey;
+   
+
+    ul {
+        list-style: none;
+        padding: 10px 550px;
+        font-size: 1.2em;
+    }
+
+    li {
+        float: left;
+    }
+
+    a {
+        text-decoration: none;
+        color: $background-color;
+        display: block;
+        text-align: center;
+        padding: 15px;
+        letter-spacing: 2px; 
+        font-family: $font-stack;
+    }
+
+    a:hover {
+        color: $pink;
+    }
+
+}
+
+// about page 
+.aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px 150px;
+    margin-top: 380px;
+    
+    .description {
+        p {
+            font-family: $font-stack;
+            font-size: 1.7em;
+        }
+    }
+}
+
+// the grid that has 3 columns 
+.column {
+    float: left;
+    width:26.5%;
+    padding: 50px;
+    text-align: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: $white
+}
+
+
+
+
 

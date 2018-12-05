@@ -214,13 +214,13 @@ nav i:hover {
 @keyframes carousel {
   100% {
     position: relative;
-    left: -600px; } }
+    left: -700px; } }
 .avatar img {
   width: 300px;
   height: 300px;
   border: 2px solid white;
   border-radius: 30px;
-  margin-left: 550px;
+  margin-left: 600px;
   margin-top: 20px; }
 
 .icon i {
@@ -235,5 +235,52 @@ footer {
   footer .p2 {
     float: right;
     color: #5C5D67; }
+
+@media (max-width: 780px) {
+  nav {
+    height: 50px; }
+    nav i {
+      font-size: 10px;
+      padding: 0;
+      margin: 0; }
+    nav ul {
+      width: 100px;
+      margin: 0; }
+    nav li {
+      margin: 0;
+      padding: 0; }
+
+  header {
+    width: 780px; }
+    header h1 {
+      margin-left: -30px; }
+    header .slogan p {
+      margin-left: -30px; }
+
+  .aboutMe {
+    width: 780px;
+    margin-left: -150px; }
+
+  .column {
+    width: 20%; }
+    .column .containerTab {
+      width: 100%;
+      font-size: 1.1em; }
+
+  .ref {
+    margin-left: -130px;
+    width: 300px;
+    height: 400px;
+    font-size: 1em; }
+
+  .acceptance {
+    margin-top: -200px; }
+
+  .avatar img {
+    margin: 0;
+    margin-left: 250px; }
+
+  .flex-container {
+    margin-left: -350px; } }
 
 /*# sourceMappingURL=styles.css.map */

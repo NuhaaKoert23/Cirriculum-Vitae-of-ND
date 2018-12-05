@@ -18,7 +18,7 @@ nav{
     z-index: 1;
     top: 0;
     height: 80px;
-    background-color: $grey;
+    background-color: $background-color;
    
 
     ul {
@@ -33,16 +33,10 @@ nav{
 
     a {
         text-decoration: none;
-        color: $background-color;
         display: block;
         text-align: center;
         padding: 15px;
         letter-spacing: 2px; 
-        font-family: $font-stack;
-    }
-
-    a:hover {
-        color: $pink;
     }
 
 }
@@ -70,8 +64,105 @@ nav{
     text-align: center;
     font-size: 1.3em;
     cursor: pointer;
-    color: $white
+    font-size: 1.5em;
+    color: $grey;
 }
+
+.containerTab {
+    width: 800px;
+    margin-left: 350px;
+    text-align: center;
+    display: none;
+    font-size: 1.3em;
+}
+
+.containerTab:hover {
+    background-color: $dark-purple;
+    box-shadow: 0px 37px 20px -15px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px);
+}
+
+#info {
+    font-size: 1.3em;
+}
+
+// clear floats after column
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+// styling education block
+.education {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 800px;
+
+    .containerTab {
+        margin: 0;
+    }
+}
+
+// the layout of the contact page
+
+.references {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-left: 150px;
+
+    .ref:hover {
+        box-shadow: 2px 2px 2px 2px $lilac;
+        font-size: 1.5em;
+    }
+}
+
+.flex-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 400px;
+    padding: 50px 550px;
+    color: $pink;
+    font-size: 2em;
+
+}
+
+.skills {
+    background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
+    height: 650px;
+    margin-top: 300px;
+    background-size: cover;
+    background-position: sticky;
+    align-items: center;
+    display: flex;justify-content: center;
+    color: $light-purple;
+    font-size: 8em;
+}
+
+/* Grow Shadow */
+.avatar {
+    img {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    }
+    img:hover, img:focus, img:active {
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+}
+
 
 
 

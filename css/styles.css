@@ -1,11 +1,13 @@
-nav a {
+nav {
+  font-family: "Amatic SC", cursive;
+  color: #c5c2c2; }
+
+a {
   text-decoration: none;
-  color: #c5c2c2;
   display: block;
   text-align: center;
   padding: 15px;
-  letter-spacing: 2px;
-  font-family: "Amatic SC", cursive; }
+  letter-spacing: 2px; }
 
 h1 {
   font-family: "Amatic SC", Bold700;
@@ -19,6 +21,35 @@ h1 {
   margin-top: -30px; }
 .slogan p:hover {
   color: #EDADC7; }
+
+.column h3 {
+  font-family: "Amatic SC", Bold700;
+  color: #5C5D67; }
+
+.containerTab h3 {
+  font-family: "Amatic SC", Bold700;
+  color: #5C5D67; }
+.containerTab p {
+  font-family: "Amatic SC", cursive;
+  color: #5C5D67; }
+
+#contact h2 {
+  font-family: "Amatic SC", Bold700;
+  font-size: 2em;
+  margin-left: 150px;
+  color: #5C5D67; }
+
+.references p {
+  font-size: 1.3em;
+  font-family: "Amatic SC", cursive;
+  color: #5C5D67; }
+
+.acceptance p {
+  font-family: "Amatic SC", cursive;
+  font-size: 2em;
+  padding: 50px 150px;
+  text-align: center;
+  color: #5C5D67; }
 
 html {
   scroll-behavior: smooth;
@@ -37,7 +68,7 @@ nav {
   z-index: 1;
   top: 0;
   height: 80px;
-  background-color: #5C5D67; }
+  background-color: #c5c2c2; }
   nav ul {
     list-style: none;
     padding: 10px 550px;
@@ -46,14 +77,10 @@ nav {
     float: left; }
   nav a {
     text-decoration: none;
-    color: #c5c2c2;
     display: block;
     text-align: center;
     padding: 15px;
-    letter-spacing: 2px;
-    font-family: "Amatic SC", cursive; }
-  nav a:hover {
-    color: #EDADC7; }
+    letter-spacing: 2px; }
 
 .aboutMe {
   display: grid;
@@ -71,11 +98,89 @@ nav {
   text-align: center;
   font-size: 1.3em;
   cursor: pointer;
-  color: white; }
+  font-size: 1.5em;
+  color: #5C5D67; }
 
-nav img {
-  width: 50px;
-  height: 50px; }
+.containerTab {
+  width: 800px;
+  margin-left: 350px;
+  text-align: center;
+  display: none;
+  font-size: 1.3em; }
+
+.containerTab:hover {
+  background-color: #A68BA5;
+  box-shadow: 0px 37px 20px -15px rgba(0, 0, 0, 0.2);
+  transform: translate(0px, -10px); }
+
+#info {
+  font-size: 1.3em; }
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 800px; }
+  .education .containerTab {
+    margin: 0; }
+
+.references {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 150px; }
+  .references .ref:hover {
+    box-shadow: 2px 2px 2px 2px #C493B0;
+    font-size: 1.5em; }
+
+.flex-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 400px;
+  padding: 50px 550px;
+  color: #EDADC7;
+  font-size: 2em; }
+
+.skills {
+  background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
+  height: 650px;
+  margin-top: 300px;
+  background-size: cover;
+  background-position: sticky;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #D199B6;
+  font-size: 8em; }
+
+/* Grow Shadow */
+.avatar img {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform; }
+.avatar img:hover, .avatar img:focus, .avatar img:active {
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+nav i {
+  width: 100px;
+  height: 50px;
+  color: #5C5D67; }
+nav i:hover {
+  color: #A68BA5; }
 
 .gif img {
   width: 200px;
@@ -83,5 +188,52 @@ nav img {
   opacity: 0.7;
   margin-left: 100px;
   margin-top: 40px; }
+
+/* Carousel */
+.slide-container {
+  margin: 0 auto;
+  overflow: hidden; }
+
+.slides {
+  height: 180px;
+  width: 5180px;
+  animation-name: carousel;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  position: relative;
+  left: 100%; }
+
+.slides i {
+  display: inline;
+  float: left;
+  padding: 50px 80px;
+  font-size: 2em;
+  margin-right: 50px; }
+
+@keyframes carousel {
+  100% {
+    position: relative;
+    left: -600px; } }
+.avatar img {
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin-left: 550px;
+  margin-top: 20px; }
+
+.icon i {
+  color: #A68BA5; }
+
+footer {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em; }
+  footer .p1 {
+    float: left;
+    color: #5C5D67; }
+  footer .p2 {
+    float: right;
+    color: #5C5D67; }
 
 /*# sourceMappingURL=styles.css.map */

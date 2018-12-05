@@ -1,8 +1,13 @@
 // nav bar 
 nav{
-    img {
-        width: 50px;
+    i {
+        width: 100px;
         height: 50px;
+        color: $grey;
+    }
+
+    i:hover {
+        color: $dark-purple;
     }
 }
 
@@ -14,5 +19,69 @@ nav{
         opacity: 0.7;
         margin-left: 100px;
         margin-top: 40px;
+    }
+}
+
+// contact page 
+/* Carousel */
+.slide-container {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    height: 180px;
+    width: 5180px;
+    // background-color: black;
+    animation-name: carousel;
+    animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: relative;
+    left: 100%; 
+}
+
+.slides i {
+    display: inline;
+    float: left;
+    padding: 50px 80px;
+    font-size: 2em;
+    margin-right: 50px; }
+   @keyframes carousel {
+    100% {
+      position: relative;
+      left: -600px; 
+    } 
+}
+  
+.avatar {
+    img {
+        width: 300px;
+        height: 300px;
+        border: 2px solid $white;
+        border-radius: 30px;
+        margin-left: 550px;
+        margin-top: 20px;
+    }
+}
+
+.icon {
+    i {
+        color: $dark-purple;
+    }
+}
+
+// footer 
+footer {
+    font-family: $font-stack;
+    font-size: 1.5em;
+    .p1 {
+        float: left;
+        color: $grey; 
+    }
+
+    .p2 {
+        float: right;
+        color: $grey;
     }
 }

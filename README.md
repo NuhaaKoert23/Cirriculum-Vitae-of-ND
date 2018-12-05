@@ -13,6 +13,7 @@ you'll need:
 - HTML
 - CSS
 - JS
+- SASS 
 
 ### Published at
 https://nuhaakoert23.github.io/Cirriculum-Vitae-of-ND/index.html

@@ -1,13 +1,9 @@
-nav {
+header {
   font-family: "Amatic SC", cursive;
-  color: #c5c2c2; }
+  color: #e6e3e3; }
 
 a {
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  padding: 15px;
-  letter-spacing: 2px; }
+  text-decoration: none; }
 
 h1 {
   font-family: "Amatic SC", Bold700;
@@ -29,8 +25,14 @@ h1 {
 .containerTab h3 {
   font-family: "Amatic SC", Bold700;
   color: #5C5D67; }
+.containerTab ul {
+  font-family: "Amatic SC", cursive;
+  color: #5C5D67; }
 .containerTab p {
   font-family: "Amatic SC", cursive;
+  color: #5C5D67; }
+.containerTab h4 {
+  font-family: "Amatic SC", Bold700;
   color: #5C5D67; }
 
 #contact h2 {
@@ -57,41 +59,63 @@ html {
   padding: 0; }
 
 body {
-  background-image: url("https://www.mielabelo.be/wp-content/uploads/2014/03/wallhaven-240723.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #c5c2c2;
-  background-position: fixed; }
+  background-color: #e6e3e3;
+  background-position: fixed;
+  margin: 0; }
 
-nav {
+header {
   position: sticky;
   z-index: 1;
   top: 0;
   height: 80px;
-  background-color: #c5c2c2; }
-  nav ul {
-    list-style: none;
-    padding: 10px 550px;
-    font-size: 1.2em; }
-  nav li {
-    float: left; }
-  nav a {
+  background-color: #e6e3e3;
+  padding-left: 10px;
+  padding-right: 10px; }
+  header a {
     text-decoration: none;
     display: block;
+    float: left;
     text-align: center;
     padding: 15px;
     letter-spacing: 2px; }
+  header .nav_bar {
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 0; }
+  header .nav_home {
+    background-color: #A68BA5;
+    width: 80px;
+    height: 80px; }
+  header .menu_item {
+    text-align: center;
+    cursor: pointer;
+    margin-top: -100px; }
+  header .flex-container {
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 400px;
+    color: #EDADC7;
+    font-size: 1em; }
+
+.container {
+  width: 100%;
+  height: 900px;
+  background-image: url("https://www.mielabelo.be/wp-content/uploads/2014/03/wallhaven-240723.jpg");
+  background-size: cover;
+  margin-top: -50px; }
 
 .aboutMe {
+  max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 50px 150px;
-  margin-top: 380px; }
+  padding: 50px 150px; }
   .aboutMe .description p {
     font-family: "Amatic SC", cursive;
     font-size: 1.7em; }
 
 .column {
+  max-width: 100%;
   float: left;
   width: 26.5%;
   padding: 50px;
@@ -102,6 +126,7 @@ nav {
   color: #5C5D67; }
 
 .containerTab {
+  max-width: 100%;
   width: 800px;
   margin-left: 350px;
   text-align: center;
@@ -124,25 +149,19 @@ nav {
 .education {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  width: 800px; }
+  width: 800px;
+  line-height: 23px; }
   .education .containerTab {
     margin: 0; }
 
 .references {
+  max-width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-left: 150px; }
   .references .ref:hover {
     box-shadow: 2px 2px 2px 2px #C493B0;
     font-size: 1.5em; }
-
-.flex-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 400px;
-  padding: 50px 550px;
-  color: #EDADC7;
-  font-size: 2em; }
 
 .skills {
   background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
@@ -154,7 +173,8 @@ nav {
   display: flex;
   justify-content: center;
   color: #D199B6;
-  font-size: 8em; }
+  font-size: 8em;
+  max-width: 100%; }
 
 /* Grow Shadow */
 .avatar img {
@@ -175,12 +195,13 @@ nav {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
-nav i {
-  width: 100px;
+header i {
+  width: 50px;
   height: 50px;
-  color: #5C5D67; }
-nav i:hover {
-  color: #A68BA5; }
+  color: #5C5D67;
+  font-size: 1em; }
+header i:hover {
+  color: #C493B0; }
 
 .gif img {
   width: 200px;
@@ -236,30 +257,32 @@ footer {
     float: right;
     color: #5C5D67; }
 
-@media (max-width: 780px) {
-  nav {
-    height: 50px; }
-    nav i {
-      font-size: 10px;
-      padding: 0;
-      margin: 0; }
-    nav ul {
-      width: 100px;
-      margin: 0; }
-    nav li {
-      margin: 0;
-      padding: 0; }
-
+@media (min-width: 500px) {
   header {
-    width: 780px; }
-    header h1 {
-      margin-left: -30px; }
-    header .slogan p {
-      margin-left: -30px; }
+    width: 100%; }
+    header i {
+      width: 20px; }
+    header .nav_home {
+      width: 50px; }
+    header .flex-container {
+      width: min-content;
+      margin-right: 150px; } }
+@media (max-width: 780px) {
+  .container {
+    height: 600px;
+    width: 780px;
+    margin-left: 30px; }
+    .container .name {
+      width: 500px; }
+      .container .name h1 {
+        text-align: center; }
+    .container .slogan {
+      width: 600px; }
 
   .aboutMe {
     width: 780px;
-    margin-left: -150px; }
+    margin-left: -50px;
+    padding: 0; }
 
   .column {
     width: 20%; }

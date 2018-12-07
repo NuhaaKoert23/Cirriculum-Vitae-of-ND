@@ -16,7 +16,7 @@ you'll need:
 - SASS 
 
 ### Published at
-https://nuhaakoert23.github.io/Cirriculum-Vitae-of-ND/index.html
+https://nuhaakoert23.github.io/online-cv/index.html
 
 ###### Author
 Nuhaa Daniels

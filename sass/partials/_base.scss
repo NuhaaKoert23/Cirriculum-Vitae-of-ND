@@ -30,6 +30,39 @@ h1 {
     }
 }
 // about page 
+.personal-information {
+    border-left: 1px solid $background-color2;
+    text-align: center;
+
+    i {
+        font-size: 2em;
+        color: $grey;
+        margin-top: 30px;
+    }
+
+    h3 {
+        font-family: $font-stack2;
+        font-size: 2em;
+        color: $grey;
+    }
+
+    p {
+        font-family: $font-stack;
+        color: $grey;
+        font-size: 1.5em;
+    }
+}
+
+.description {
+    p {
+        font-family: $font-stack;
+        font-size: 1.5em;
+        color: $grey;
+        width: 500px;
+        margin-left: 100px;
+        border-top: 1px solid $background-color2;
+    }
+}
 .column {
     h3 {
         font-family: $font-stack2;
@@ -91,8 +124,9 @@ h1 {
 .acceptance {
     p {
         font-family: $font-stack;
-        font-size: 2em;
-        padding: 50px 150px;
+        font-size: 1.5em;
+        margin-left: 380px;
+        width: 800px;
         text-align: center;
         color: $grey;
     }

@@ -85,9 +85,12 @@
                font-size: 1em;
            }
        }
+   }
 
-    
-    
+   .skills-section {
+       h2 {
+           margin-top: 500px;
+       }
    }
 
    .ref {
@@ -99,6 +102,9 @@
 
    .acceptance {
        margin-top: -200px;
+       margin-left: -390px;
+       width: 600px;
+       font-size: 0.7em;
    }
 
    .avatar {

@@ -146,6 +146,21 @@ header{
     }
 }
 
+
+//  layout of carousel 
+.skills {
+    background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
+    height: 650px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: $light-purple;
+    font-size: 8em;
+    max-width: 100%;
+}
 // the layout of the contact page
 
 .references {
@@ -160,19 +175,7 @@ header{
     }
 }
 
-.skills {
-    background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
-    height: 650px;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    color: $light-purple;
-    font-size: 8em;
-    max-width: 100%;
-}
+
 
 /* Grow Shadow */
 .avatar {

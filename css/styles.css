@@ -38,11 +38,13 @@ h1 {
   font-family: "Amatic SC", Bold700;
   color: #5C5D67; }
 
-.skills-section h2 {
-  font-family: "Amatic SC", Bold700;
-  color: #5C5D67;
-  text-align: center;
-  font-size: 3em; }
+.skills-section {
+  margin-top: 300px; }
+  .skills-section h2 {
+    font-family: "Amatic SC", Bold700;
+    color: #5C5D67;
+    text-align: center;
+    font-size: 3em; }
 
 #contact h2 {
   font-family: "Amatic SC", Bold700;
@@ -172,15 +174,6 @@ header {
   .education .containerTab {
     margin: 0; }
 
-.references {
-  max-width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-left: 150px; }
-  .references .ref:hover {
-    box-shadow: 2px 2px 2px 2px #A68BA5;
-    font-size: 1.3em; }
-
 .skills {
   background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
   height: 650px;
@@ -193,6 +186,15 @@ header {
   color: #D199B6;
   font-size: 8em;
   max-width: 100%; }
+
+.references {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 150px; }
+  .references .ref:hover {
+    box-shadow: 2px 2px 2px 2px #A68BA5;
+    font-size: 1.3em; }
 
 /* Grow Shadow */
 .avatar img {

@@ -22,6 +22,14 @@ header{
     }
 }
 
+// project list 
+.project_list {
+    img {
+        width: 400px;
+        height: 200px;
+    }
+}
+
 // contact page 
 /* Carousel */
 .slide-container {
@@ -32,9 +40,8 @@ header{
 .slides {
     height: 180px;
     width: 5180px;
-    // background-color: black;
     animation-name: carousel;
-    animation-duration: 40s;
+    animation-duration: 30s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     position: relative;
@@ -50,7 +57,7 @@ header{
    @keyframes carousel {
     100% {
       position: relative;
-      left: -700px; 
+      left: -1000px; 
     } 
 }
   

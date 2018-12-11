@@ -80,12 +80,6 @@ header{
     background-color:$white;
 }
 
-// Line border
-.line-border {
-    border-bottom: 3px solid $grey;
-   width: 50px;
-} 
-
 // the grid that has 3 columns 
 .column {
     max-width: 100%;
@@ -142,11 +136,17 @@ header{
     }
 }
 
+// skills container 
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 3px solid $background-color2;
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 //  layout of carousel 
 .skills {
-    background-image: url("https://mumsvillage.com/wp-content/uploads/2017/02/black-woman-hand-on-laptop-createherstock.jpg");
-    height: 650px;
     margin-left: 50px;
     margin-right: 50px;
     background-size: cover;
@@ -154,11 +154,20 @@ header{
     display: flex;
     justify-content: center;
     color: $light-purple;
-    font-size: 8em;
+    font-size: 6em;
     max-width: 100%;
 }
-// the layout of the contact page
 
+// layout of projects section 
+#projects
+.project_list {
+    background-color: $background-color4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+// the layout of the contact page
 .references {
     max-width: 100%;
     display: grid;
@@ -170,8 +179,6 @@ header{
         font-size: 1.3em;
     }
 }
-
-
 
 /* Grow Shadow */
 .avatar {

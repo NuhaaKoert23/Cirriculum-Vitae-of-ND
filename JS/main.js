@@ -6,3 +6,9 @@ function openTab(tabName) {
     }
     document.getElementById(tabName).style.display = "block";
 }
+
+$(document).ready(function ({
+    $(".gif").click(function{
+        
+    })
+});

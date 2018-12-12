@@ -18,7 +18,8 @@ header{
         width: 300px;
         height: 250px;
         opacity: 0.7;
-        margin-left: 100px;
+        // margin-left: 100px;
+    
     }
 }
 
@@ -91,15 +92,16 @@ header{
 
 // footer 
 footer {
-    font-family: $font-stack;
-    font-size: 1.5em;
-    .p1 {
-        float: left;
-        color: $grey; 
+    i {
+        color: $grey;
+        font-size: 2em;
+        font-family: $font-stack;
+        margin-top: 30px;
     }
 
-    .p2 {
-        float: right;
+    p {
         color: $grey;
+        font-size: 1.5em;
+        font-family: $font-stack;
     }
 }

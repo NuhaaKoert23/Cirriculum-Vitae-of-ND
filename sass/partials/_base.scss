@@ -95,16 +95,20 @@ h1 {
 .skills-container {
     margin-top: 100px;
     background-color: $background-color4;
-    i {
-        font-size: 5em;
-        color: $grey;
-        margin-top: 30px;
-        margin-left: 650px;
+    .skills-icon {
+        i {
+            font-size: 5em;
+            color: $grey;
+            margin-top: 30px;
+            margin-left: 650px;
+            margin-bottom: 30px;
+        } 
     }
 
     .skills-gained {
         margin-left: 150px;
         border-right: 1px solid $background-color2;
+        width: 500px;
 
         h2 {
         font-family: $font-stack2;
@@ -120,8 +124,8 @@ h1 {
     }
 
     .skills-and-abilities {
-        margin-top: 100px;
-        margin-left: 180px;
+        width: 500px;
+        margin-left: 150px;
 
         h2 {
             font-family: $font-stack2;
@@ -177,9 +181,8 @@ h1 {
 .acceptance {
     p {
         font-family: $font-stack;
-        font-size: 1.5em;
-        margin-left: 380px;
-        width: 800px;
+        font-size: 2em;
+        width: 400px;
         text-align: center;
         color: $grey;
     }

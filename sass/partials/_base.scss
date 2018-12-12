@@ -145,24 +145,34 @@ h1 {
     }
     
 }
-
-// contact page
-#contact {
+   
+.header3 {
     h2 {
-        font-family: $font-stack2;
-        font-size: 2em;
-        margin-left: 150px;
-        color: $grey;
+    font-family: $font-stack2;
+    color: $grey;
+    font-size: 2.5em;
     }
 }
 
+
+// contact page
 .references {
+    h2 {
+        text-align: center;
+        font-family: $font-stack;
+        color: $grey;
+        font-size: 2.5em;
+    }
+
+    .reference-list {
     p {
         font-size: 1.3em;
         font-family: $font-stack;
         color: $grey;
+        }
     }
 }
+
 
 .acceptance {
     p {

@@ -25,8 +25,19 @@ header{
 // project list 
 .project_list {
     img {
-        width: 400px;
-        height: 200px;
+        width: 350px;
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 50px;
+    }
+
+    img:hover {
+        color: $grey;
+    }
+
+    a>img:hover {
+        opacity: .5
     }
 }
 
